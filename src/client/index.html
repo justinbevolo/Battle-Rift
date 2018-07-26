@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<meta name="description" content="AggieCoders Battle Rift CSCE 315 Project">
+
+<title>Battle Rift</title>
+
+	<!-- Styles -->
+	
+	<link rel="stylesheet" type="text/css" href="/client/GameStyle.css" media="screen" /> 
+	
+	<!-- Game Code -->	
+	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+</head>
+
+<body oncontextmenu="return false;">
+	<div id='title'>
+		Battle Rift<br>
+	</div>
+	<div id = 'main-menu'>
+		<div id='prompt'>
+			Name your warrior:<br>
+		</div>
+		<input id = 'playername' type = 'text' maxlength = '13'></input>
+		<br><br>
+		<button id = 'enter'> Enter the Rift </button> 
+		<br><br>
+		<button id = 'spectBtn'> Spectate the Rift </button>
+		<br><br>
+		<button id = 'controlsBtn'> Controls and Icons </button>
+		<br><br>
+		<button id = 'rulesBtn'> Rules </button>
+	</div>
+	
+	<div id = 'game' style = 'display:none;'>
+		<canvas id='gameCanvas' width=1000 height=600></canvas>
+		<div>
+			<button id= 'ready' onclick="playerReady()">READY UP</button>
+		</div>
+		<div>
+			<button id= 'toMenu3' onclick="toMenu3()">Main Menu</button>
+		</div>
+		<div id="textbox" style='width:1000px;height:100px;overflow-y:auto'>
+		</div>
+		<form id='chat'>
+			<input id='input' type='text' autocomplete="off" style='width:1000px' placeholder='Chat...'></input>
+		</form>
+	</div>
+	
+	<div id = 'gameover' style = 'display:none;'>
+		<canvas id='gameoverCanvas' width=1000 height=600></canvas>
+		<br>
+		<div>
+			<button id= 'return' onclick="mainMenu()">Main Menu</button>
+		</div>
+	</div>
+	
+	<div id = 'rules' style = 'display:none;'>
+		<canvas id='rulesCanvas' width=1000 height=600></canvas>
+		<br>
+		<div>
+			<button id= 'toMenu' onclick="toMenu()">Main Menu</button>
+		</div>
+	</div>
+	
+	<div id = 'controls' style = 'display:none;'>
+		<canvas id='controlsCanvas' width=1000 height=600></canvas>
+		<br>
+		<div>
+			<button id= 'toMenu2' onclick="toMenu2()">Main Menu</button>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="/client/Images.js"></script> 
+	<script type="text/javascript" src="/client/Client.js"></script>
+	<script type="text/javascript" src="/client/KeyHandler.js"></script> 
+	
+</body>
+
+</html>
