@@ -9,6 +9,8 @@ Battle Rift Deliverables: https://drive.google.com/drive/folders/0B38-4q0mlayEMm
 
 IdeaMache Presentation: https://ideamache.ecologylab.net/e/JWoREEUflU/
 
+Video Demonstration: https://www.youtube.com/watch?v=9qrM2AkbM8I
+
 --------------------------------------------------------------------------------------------------
 CREDITS (Special thanks to):
 
